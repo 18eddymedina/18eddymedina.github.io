@@ -1,86 +1,233 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>bootstrap portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Portfolio - Eduardo Medina</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body style= "background-image: url(qbkls.png)">
-    
-    <nav class="nav  navbar-expand-sm navbar-light bg-light">
-        <h2>
-            Eduardo Medina
-        </h2>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-          
-          </ul>
-        </div>
-      </nav>
-  
+<body>
 
+  <nav id="name" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
 
-    <div class="container-fluid">
-        <div class="row content">
-            <div class="col-xs-0 col-sm-1 col-md-1 col-lg-2">
-            </div>
-            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-8" id="box">
-                
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
-                            <h2>About Me</h2>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                <img id="pic" style="-webkit-user-select: none;cursor: zoom-in;"  src="face.JPG" width="175" height="215">  
-                            <br>
-                            </div>
-                            <div class="col-lg-0 col-md-1">
-                                <br>
-                            </div>
-                        <div class="col-lg-7 body-main">
-                             <p> My name is Eduardo Medina, and I am a recent graduate from the University of Texas Rio Grande Valley. I graduated with a Bachelor of Science in Computer Engineering. I have expirence in C++, C#, C, Java, and SQL. I also have have knowledge of in object oriented lanuages, databases, and newtorking. I am currently enrolled and attending the University of Texas Coding Boot Camp. I am learning new languages such as HTML, CSS, and Javascript as well as learning new maner of web development such as bootstrap and node.js. I am currently searching for a job in the computer engineering or web development field.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-0 col-sm-1 col-md-1 col-lg-2">   
-                </div>
-        </div>
+            </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+
+            </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
+  </nav>
+ 
+
+  <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red" href="#name">
+        <i class="large material-icons">arrow_upward</i>
+      </a>
+  </div>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Eduardo Medina</h1>
+
+    </div>
+  </div>
+
+  <div id="about" class="container">
+    <div class="section">
+            <div class="row center">
+                    <h3 class="header col s12 light">About</h3>
+            </div>
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text"><i class="material-icons">school</i></h2>
+            <h5 class="center">Eduation</h5>
+
+            <p class="light">Recent graduate from The University of Texas Rio Grande Valley with a Bachelor's of Scinece in Computer Engineering. I am currently enrolled in a Full Stack Web Development course at The University of Texas at Austin which award a Certificate in Development in March 2019.</p>
+          </div>
+        </div>
+
+        <div  class="col s12 m4">
+          <div id="skills" class="icon-block">
+            <h2 class="center red-text"><i class="material-icons">code</i></h2>
+            <h5 class="center">Skills</h5>
+
+            <p class="light">
+          Expert: Javascript, C++, C, Git, HTML, CSS
+            </p>
+            <p class="light">
+                Itermideate: SQL, C#, Bootstrap, APIs, Ajax
+                  </p>
+                  <p class="light">
+                      Beginer: Java, NodeJS
+                        </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text"><i class="material-icons">business_center</i></h2>
+            <h5 class="center">Goals</h5>
+
+            <p class="light">Searching to work with an enthusiastic programming team. I would love to work in any aspect of Software Engineering such as QA Automation Testing and/or Full Stack Web Development. Ready to learn  everything needed to be a great Software Engineer.  </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+  </div>
 
 
-    <footer id="footer1">
+  <div id="portfolio" class="container">
+    <div class="section">
+            <div class="row center">
+                    <h3 class="header col s12 light">Portfolio</h3>
+            </div>
+      <!--   Icon Section   -->
+      <div class="row">
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">theaters</i>Reel-Match</div>
+            <div class="collapsible-body"><span>
+              <a href="http://reel-match.com">
+              This website is a movie recommendation generator. It allows users to create an account and login. This allows all of their seaches to be saved though firebase. The website works by selecting/deselecting your favorite movies, then check your generated reccomended movies based off your favorites.
+              </a></span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">train</i>Real Time Train Schedule</div>
+            <div class="collapsible-body"><span>
+              This website allows one to create a train schedule using moment.js. The schedule is in real time and provides the start time, next train, and interval of each train.
+            
+            </span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">hourglass_empty</i>Trivia Game</div>
+            <div class="collapsible-body"><span>
+              <div>
+                <a href="https://18eddymedina.github.io/TriviaGame/">
+
+              Lorem ipsum dolor sit amet.
+            
+            </a>
+            </span></div>
+          </li>
+
+          <li>
+              <div class="collapsible-header"><i class="material-icons">gif</i>Giphy App</div>
+              <div class="collapsible-body"><span>
+                  <a href="https://18eddymedina.github.io/Giphy-API/">
+
+                Lorem ipsum dolor sit amet.
+              </a>
+              </span></div>
+            </li>
+
+            <li>
+                <div class="collapsible-header"><i class="material-icons">videogame_asset</i>RPG Game</div>
+                <div class="collapsible-body"><span>
+                    <a href="https://18eddymedina.github.io/unit-4-game/">
+
+                  Lorem ipsum dolor sit amet.</a></span></div>
+              </li>
+
+        </ul>
+      </div>
+
+    </div>
+    <br>
+  </div>
+
+
+
+  <div id="contact" class="container">
+      <div class="section">
+              <div class="row center">
+                      <h3 class="header col s12 light">Contact</h3>
+              </div>
+        <!--   Icon Section   -->
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+                   
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+            
+            </form>
+          </div>
+          <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Textarea</label>
+                  </div>
+                </div>
+              </form>
+            </div>    
+        
+        </div>
   
-    </footer>
-    <footer id="footer2">
-        Copyright
-          </footer>
+      </div>
+      <br>
+    
+      <div id="resume" class="container">
+        <div class="section">
+          <div class="row center">
+            <h3 class="header col s12 light">Resume</h3>
+    </div>
+        
+      <img id= "resume" src = "resume.jpg" />   
+      <a id="link" href ="resume.pdf">Download Resume</a>
+          
+          </div>
+    
+        </div>
 
-</body>
+  
+
+
+
+  <footer class="page-footer navy">
+    
+  
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
-
-
-
-
