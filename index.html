@@ -4,6 +4,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Portfolio - Eduardo Medina</title>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -40,6 +42,9 @@
       </a>
   </div>
 
+
+
+  
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
@@ -47,6 +52,8 @@
 
     </div>
   </div>
+
+
 
   <div id="about" class="container">
     <div class="section">
@@ -57,7 +64,7 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center red-text"><i class="material-icons">school</i></h2>
+            <h2 class="center red-text"><i id="material-icons" class="material-icons">school</i></h2>
             <h5 class="center">Eduation</h5>
 
             <p class="light">Recent graduate from The University of Texas Rio Grande Valley with a Bachelor's of Scinece in Computer Engineering. I am currently enrolled in a Full Stack Web Development course at The University of Texas at Austin which award a Certificate in Development in March 2019.</p>
@@ -66,7 +73,7 @@
 
         <div  class="col s12 m4">
           <div id="skills" class="icon-block">
-            <h2 class="center red-text"><i class="material-icons">code</i></h2>
+            <h2 class="center red-text"><i id="material-icons" class="material-icons">code</i></h2>
             <h5 class="center">Skills</h5>
 
             <p class="light">
@@ -83,7 +90,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center red-text"><i class="material-icons">business_center</i></h2>
+            <h2 class="center red-text"><i id="material-icons" class="material-icons">business_center</i></h2>
             <h5 class="center">Goals</h5>
 
             <p class="light">Searching to work with an enthusiastic programming team. I would love to work in any aspect of Software Engineering such as QA Automation Testing and/or Full Stack Web Development. Ready to learn  everything needed to be a great Software Engineer.  </p>
@@ -94,6 +101,9 @@
     </div>
     <br>
   </div>
+
+
+
 
 
   <div id="portfolio" class="container">
@@ -107,25 +117,27 @@
           <li>
             <div class="collapsible-header"><i class="material-icons">theaters</i>Reel-Match</div>
             <div class="collapsible-body"><span>
-              <a href="http://reel-match.com">
-              This website is a movie recommendation generator. It allows users to create an account and login. This allows all of their seaches to be saved though firebase. The website works by selecting/deselecting your favorite movies, then check your generated reccomended movies based off your favorites.
-              </a></span></div>
+              This website is a movie recommendation generator. It allows users to create an account and login. This allows all of their seaches to be saved though firebase. The website works by selecting/deselecting your favorite movies, then check your generated recommended movies based off your favorites.
+              <a href="http://reel-match.com">Website</a>
+ 
+            </span></div>
           </li>
           <li>
             <div class="collapsible-header"><i class="material-icons">train</i>Real Time Train Schedule</div>
             <div class="collapsible-body"><span>
               This website allows one to create a train schedule using moment.js. The schedule is in real time and provides the start time, next train, and interval of each train.
-            
+              <a href="https://18eddymedina.github.io/Train-Schedule/">Website</a>
+
             </span></div>
           </li>
           <li>
             <div class="collapsible-header"><i class="material-icons">hourglass_empty</i>Trivia Game</div>
             <div class="collapsible-body"><span>
               <div>
+                This website is a trivia that shows the use of modules and timed transitions.
                 <a href="https://18eddymedina.github.io/TriviaGame/">
 
-              Lorem ipsum dolor sit amet.
-            
+Website            
             </a>
             </span></div>
           </li>
@@ -133,19 +145,20 @@
           <li>
               <div class="collapsible-header"><i class="material-icons">gif</i>Giphy App</div>
               <div class="collapsible-body"><span>
+                This simple application shows the use of API calls from the Giphy-API to generate buttons that will therefore create gifs.
                   <a href="https://18eddymedina.github.io/Giphy-API/">
 
-                Lorem ipsum dolor sit amet.
-              </a>
+Website              </a>
               </span></div>
             </li>
 
             <li>
                 <div class="collapsible-header"><i class="material-icons">videogame_asset</i>RPG Game</div>
                 <div class="collapsible-body"><span>
+                  A turn-based RPG game where the user much wisely choose his opponents to win.  
                     <a href="https://18eddymedina.github.io/unit-4-game/">
 
-                  Lorem ipsum dolor sit amet.</a></span></div>
+                  Website</a></span></div>
               </li>
 
         </ul>
@@ -154,6 +167,8 @@
     </div>
     <br>
   </div>
+
+
 
 
 
@@ -192,6 +207,9 @@
                     <textarea id="textarea1" class="materialize-textarea"></textarea>
                     <label for="textarea1">Textarea</label>
                   </div>
+                  <button id='a' class="btn waves-effect waves-light" type="submit" name="action">Submit
+                      <i class="material-icons right">send</i>
+                    </button>
                 </div>
               </form>
             </div>    
@@ -200,7 +218,42 @@
   
       </div>
       <br>
-    
+    <script>  var config = {
+        apiKey: "AIzaSyCgJo6-6dg0pZTxIYyMi9teau4U0VMKtlw",
+        authDomain: "portfoliocontact-f14b0.firebaseapp.com",
+        databaseURL: "https://portfoliocontact-f14b0.firebaseio.com",
+        projectId: "portfoliocontact-f14b0",
+        storageBucket: "",
+        messagingSenderId: "488433273829"
+      };
+      firebase.initializeApp(config);
+      var database=firebase.database();
+
+      $("#a").on("click", function(){
+          var name=$("#first_name").val().trim();
+          var lname=$('#last_name').val().trim();
+          var email=$("#email").val().trim();
+          var message=$("#textarea1").val().trim();
+          $("#email").val("");
+          $("#first_name").val("");
+          $("#last_name").val("");
+
+          $("#textarea1").val("Thank You for sending a message, I will get back to you as soon as possible.");
+
+          database.ref().push({
+      name: name,
+      lname:lname,
+      email: email,
+      message:message
+    });
+      })
+
+       </script>
+
+
+
+
+
       <div id="resume" class="container">
         <div class="section">
           <div class="row center">
